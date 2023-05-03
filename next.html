@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>MOHIT BASIC LOGIN PAGE</title>
+    <style>
+
+
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+html { width: 100%; height:100%; overflow:hidden; }
+
+
+.footer{ 
+       position: fixed;     
+       text-align: center;    
+       bottom: 72px; 
+       width: 100%;
+   }  
+.login { 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -220px 0 0 -150px;
+	width:300px;
+	height:300px;
+}
+.login h1{ color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+
+input,select { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+    </style>
+    <script>
+      function Percentage(){  
+var num1=document.getElementById("number1").value;  
+var num2=document.getElementById("number2").value;  
+if(num1=num1)
+{
+alert("Succesfully Registered")
+}
+else if(num2=num2)
+{
+  alert("Succesfully Registered")
+}
+}  
+    </script>
+  </head>
+  <body>
+      
+   <!--Navbar-->
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="C:\Users\ravir\Desktop\project 1234\next.html">Welcome</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="">Contact Me</a>
+      </li>
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="C:\Users\ravir\Desktop\project 1234\demo.html">Sign In !!</a>
+      </li>
+    </ul>
+  </nav>
+   
+   <form action="#" method="POST">
+      <div class="login">
+        <h1>Sign Up Page</h1>
+            <input type="text" name="user1" placeholder="Enter Username" id="number1" required="required" />
+              <input type="text" name="user2" placeholder="Enter Password" id="number2" required="required" />
+            <select class="form-control custom-select" id="maintain" name= "user3">
+              <option value="1">Gender</option>
+              <option value="0">Male</option>
+              <option value="1">Female</option>
+            </select>
+            <br>
+            <select  class="form-control custom-select" id="coachingmode" name="user4">
+              <option value="1">Select University</option>
+              <option value="0">Thapar University</option>
+              <option value="1">Others</option>
+            </select>
+            <select  class="form-control custom-select" id="psychology" name="user5">
+              <option value="1">Select Department</option>
+              <option value="0">E&C</option>
+              <option value="-1">Others</option>
+            </select>
+           <button type="submit" class="btn btn-primary btn-block btn-large" onclick="Percentage()">Register</button>
+          </form>
+      </div>
+</body>
+</html>
